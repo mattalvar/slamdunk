@@ -9,7 +9,7 @@ body {
 /*main nav*/
 
 .navbar-nav .nav-link {
-    color: #000;
+    color: #ce1d19;
     font-size: 1.5em;
 }
 
@@ -52,6 +52,10 @@ body {
 .navbar-toggler {
     width: 50px;
     height: 50px;
+}
+
+h1 {
+    font-size: 4.5em;
 }
 
 
@@ -129,7 +133,8 @@ body {
 
 .carousel-item img {
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
+    object-position: top;
 }
 
 .nav-link.active {
@@ -146,6 +151,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    list-style: none;
 }
 
 .grilla-tapas ul li img {
