@@ -1,66 +1,98 @@
 /*colores*/
+
 .rojo {
-  color: #ce1d19; }
+    color: #ce1d19;
+}
 
 .rojo_fondo {
-  background-color: #ce1d19; }
+    background-color: #ce1d19;
+}
 
 .amarillo {
-  color: #f9c218; }
+    color: #f9c218;
+}
 
 .amarillo-fondo {
-  background-color: #f9c218; }
+    background-color: #f9c218;
+}
 
 .celeste {
-  color: #8ed1e3; }
+    color: #8ed1e3;
+}
 
 .celeste-fondo {
-  background-color: #8ed1e3; }
+    background-color: #8ed1e3;
+}
 
 .blanco {
-  color: white; }
+    color: white;
+}
 
 .blanco_fondo {
-  background-color: white; }
+    background-color: white;
+}
+
 
 /*fuentes*/
+
 h1,
 h2,
 h3,
 h4,
 .btn,
 .navbar-nav .nav-link {
-  font-family: "Kanit", sans-serif; }
+    font-family: "Kanit", sans-serif;
+}
 
 body,
 p,
 a,
 ul li {
-  font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+}
+
 
 /*autor*/
+
 .wrapper__autor img {
-  max-height: 500px;
-  overflow: hidden;
-  object-fit: cover;
-  width: 100%; }
+    max-height: 500px;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+}
+
 
 /*novedades*/
+
 .wrapper__novedades .news {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-gap: 20px; }
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
 
 .wrapper__novedades__articulo {
-  grid-column: auto; }
+    grid-column: auto;
+    padding: 0;
+}
 
 .wrapper__novedades__articulo--articulo_destacado {
-  grid-column: 1; }
+    grid-column: 1;
+}
 
 @media (min-width: 700px) {
-  .wrapper__novedades .news {
-    grid-template-columns: 33.33333% 33.33333% 33.33333%; }
-  .wrapper__novedades__articulo--articulo_destacado {
-    grid-column: 1 / span 3; } }
+    .wrapper__novedades .news {
+        grid-template-columns: 33.33333% 33.33333% 33.33333%;
+    }
+    .wrapper__novedades__articulo--articulo_destacado {
+        grid-column: 1 / span 3;
+        padding: 0;
+    }
+    .wrapper__novedades__articulo--articulo_destacado figure {
+        flex-direction: row!important;
+    }
+    .wrapper__novedades__articulo--articulo_destacado figure figcaption {
+        padding: 0 3em;
+    }
+}
